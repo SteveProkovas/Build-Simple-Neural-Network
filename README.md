@@ -33,36 +33,32 @@ This will generate some sample input data, create a neural network with one hidd
 ## Algorithmic Explanation
 
 1. **Input Layer**:
-   - The model receives input data consisting of three features (e.g., \(x_1\), \(x_2\), \(x_3\)) representing each sample in the dataset.
+   - The network receives input data consisting of features (e.g., $$x_1$$, $$x_2$$, $$x_3$$).
 
 2. **Hidden Layer**:
-   - The hidden layer consists of neurons that compute outputs based on the weighted sum of the inputs.
+   - The hidden layer consists of several neurons that compute outputs based on the weighted sum of the inputs.
    - Each neuron applies an activation function (e.g., ReLU) to introduce non-linearity:
-     \[
-     h_j = \text{ReLU}(w_j \cdot X + b_j)
-     \]
+     $$ h_j = \text{ReLU}(w_j \cdot X + b_j) $$
      where:
-     - \(h_j\) is the output of neuron \(j\),
-     - \(w_j\) are the weights associated with neuron \(j\),
-     - \(X\) is the input vector,
-     - \(b_j\) is the bias for neuron \(j\).
+     - $$h_j$$ is the output of neuron $$j$$.
+     - $$w_j$$ are the weights associated with neuron $$j$$.
+     - $$X$$ is the input vector.
+     - $$b_j$$ is the bias for neuron $$j$$.
 
 3. **Output Layer**:
-   - The output layer produces the final prediction using a sigmoid activation function (used for binary classification):
-     \[
-     y_{\text{pred}} = \sigma(w_o \cdot h + b_o)
-     \]
+   - The output layer produces the final prediction using a different activation function (e.g., sigmoid for binary classification):
+     $$ y_{\text{pred}} = \sigma(w_o \cdot h + b_o) $$
      where:
-     - \(y_{\text{pred}}\) is the predicted output,
-     - \(w_o\) are the weights for the output layer,
-     - \(h\) is the output from the hidden layer,
-     - \(b_o\) is the bias for the output neuron.
+     - $$y_{\text{pred}}$$ is the predicted output.
+     - $$w_o$$ are the weights for the output layer.
+     - $$h$$ is the output from the hidden layer.
+     - $$b_o$$ is the bias for the output neuron.
 
 4. **Loss Function**:
-   - The model uses binary cross-entropy as the loss function, which measures the difference between predicted outputs and actual target values.
+   - The model uses a loss function (e.g., binary cross-entropy) to quantify the difference between predicted and actual outputs.
 
 5. **Optimization**:
-   - The Adam optimizer is used to update the weights and biases, minimizing the loss function through backpropagation.
+   - An optimization algorithm (e.g., Adam) updates the weights and biases to minimize the loss function through backpropagation.
 
 ## Pseudocode
 
