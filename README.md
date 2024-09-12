@@ -4,11 +4,9 @@ A simple example of building a neural network in Python using TensorFlow and Ker
 
 ## Table of Contents
 - [Motivation](#motivation)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Algorithmic Explanation](#algorithmic-explanation)
 - [Mathematical Explanation](#mathematical-explanation)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Motivation
@@ -19,31 +17,6 @@ This project aims to provide a basic example of building a neural network with o
 - Compile the model with an optimizer and loss function
 - Train the model on the sample data
 - Make predictions using the trained model
-
-## Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/SteveProkovas/Build-Simple-Neural-Network.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd Build-Simple-Neural-Network
-```
-
-3. Create a virtual environment (optional but recommended):
-```bash
-python -m venv .venv
-```
-
-4. Activate the virtual environment:
-   - On Windows: `.venv\Scripts\activate`
-   - On macOS/Linux: `source .venv/bin/activate`
-
-5. Install the required dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ## Usage
 1. Open the `simple_neural_network.py` file in your preferred code editor.
@@ -111,9 +84,6 @@ This will generate some sample input data, create a neural network with one hidd
      - $$\nabla L$$ is the gradient of the loss function with respect to the weights.
 
 This simple neural network can be expanded with more layers, different activation functions, and various architectures depending on the complexity of the problem you are trying to solve.
-
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## License
 This project is licensed under the [Apache License 2.0](LICENSE). You are free to use, modify, and distribute this code as long as you include the original copyright notice and license.
